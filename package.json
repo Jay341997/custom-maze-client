@@ -2,7 +2,9 @@
   "name": "maze",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jay341997.github.io/custom-maze",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "heap": "^0.2.6",
     "react": "^16.5.0",
     "react-bootstrap": "^0.32.4",
@@ -16,7 +18,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
 }
